@@ -1,4 +1,5 @@
 [![edit-in-WebComponents.dev](https://webcomponents.dev/assets/ext/edit_in_wcd.svg)](https://webcomponents.dev/edit/dyflJofod72crJWUDyyo)
+
 # `<block-link>`
 
 A simple and super lightweight web component to create block links.
@@ -143,7 +144,8 @@ block-link a {
 }
 ```
 
-This would look something like this in action:
+This would look something like this in action
+(Go [here](https://webcomponents.dev/preview/dyflJofod72crJWUDyyo) if you can't see this properly ):
 
 ```js script
 import "./index.js";
