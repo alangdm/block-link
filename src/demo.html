@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Block Link Demo</title>
+	<script type="module" src="./index.js"></script>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		block-link {
+			font-family: serif;
+			width: 300px;
+			height: 300px;
+			background: #17141d;
+			border-radius: 16px;
+			padding: 1rem 1.5rem;
+			box-shadow: -1rem 0 3rem #000;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			cursor: pointer;
+			margin: 30px;
+		}
+
+		block-link:hover h2 a {
+			color: #ff8a00;
+		}
+
+		block-link:focus-within a:focus {
+			text-decoration: none;
+		}
+
+		h2,
+		a,
+		p,
+		small {
+			color: #fff;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		a:hover,
+		a:focus {
+			color: #ff8a00;
+			outline: none;
+		}
+	</style>
+</head>
+
+<body>
+	<block-link main-link="h2 a">
+		<small><a href="#date">Date: 2020/01/01</a></small>
+		<h2><a href="#header">Header</a></h2>
+		<p>Current Hash: <span id="hash"><span></p>
+		<footer><a href="#footer">Footer link</a></footer>
+	</block-link>
+	<script>
+		const hash = document.querySelector('#hash');
+		window.addEventListener('hashchange', () => {
+			hash.textContent = location.hash;
+		});
+	</script>
+</body>
+
+</html>
