@@ -1,6 +1,6 @@
 const ATTRIBUTE_MAP = { "main-link": "mainLink", mainlink: "mainLink" };
 const DEFAULT_SELECTOR = "a";
-const ANCHOR_REGEX = /^a$/i;
+const LINK_REGEX = /^(block-link|a)$/i;
 
 class BlockLink extends HTMLElement {
   constructor() {
@@ -37,19 +37,22 @@ class BlockLink extends HTMLElement {
   get _mainLinkNode() {
     const custom = this.querySelector(this.mainLink);
     const fallback = this.querySelector(DEFAULT_SELECTOR);
-    return custom && ANCHOR_REGEX.test(custom.tagName) ? custom : fallback;
+    return custom && LINK_REGEX.test(custom.tagName) ? custom : fallback;
+  }
+
+  click() {
+    if (!this._mainLinkNode) {
+      return;
+    }
+    this._mainLinkNode.click();
   }
 
   _clicked(e) {
     const isTextSelected = !!window.getSelection().toString();
-    if (
-      ANCHOR_REGEX.test(e.target.tagName) ||
-      isTextSelected ||
-      !this._mainLinkNode
-    ) {
+    if (LINK_REGEX.test(e.target.tagName) || isTextSelected) {
       return;
     }
-    this._mainLinkNode.click();
+    this.click();
   }
 }
 
