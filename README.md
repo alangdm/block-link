@@ -5,7 +5,10 @@
 A simple and super lightweight web component to create block links.
 
 ```html
-<script src="https://unpkg.com/block-link?module" type="module"></script>
+<script
+  src="https://unpkg.com/@alangdm/block-link?module"
+  type="module"
+></script>
 
 <block-link main-link="h2 a">
   <small><a href="#date">Date: 2020/01/01</a></small>
@@ -57,13 +60,13 @@ mentioned above please give Vikas's article a read.
 ### Install from npm
 
 ```bash
-npm i block-link
+npm i @alangdm/block-link
 ```
 
 Import the component in your JS files
 
 ```js
-import "block-link";
+import "@alangdm/block-link";
 ```
 
 ### Add from a CDN
@@ -74,13 +77,16 @@ In your HTML files
 
 ```html
 <!-- example from unpkg -->
-<script src="https://unpkg.com/block-link?module" type="module"></script>
+<script
+  src="https://unpkg.com/@alangdm/block-link?module"
+  type="module"
+></script>
 ```
 
 Or in your JS files
 
 ```js
-import "https://unpkg.com/block-link?module";
+import "https://unpkg.com/@alangdm/block-link?module";
 ```
 
 ### Use in Your Code
