@@ -50,9 +50,11 @@ export class BlockLink extends HTMLElement {
   _clicked(e) {
     e.stopPropagation();
     const selection = window.getSelection();
-    const isTextSelected =
+    const textSelected =
       selection.containsNode(this, true) && !!selection.toString();
-    if (LINK_REGEX.test(e.target.tagName) || isTextSelected) {
+    const innerLinkClicked =
+      e.target !== this && LINK_REGEX.test(e.target.tagName);
+    if (innerLinkClicked || textSelected) {
       return;
     }
     this.click();
