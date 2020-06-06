@@ -122,6 +122,20 @@ In this case we used the `.main-link` class selector to identify our main link,
 but we could have also used `footer>a` or even `a[href="#footer"]`.
 Any selector works as long as it serves as a unique identifier for the link.
 
+### Nested `<block-link>`s
+
+You can use `<block-link>`s inside of other `<block-link>`s, they can even be the main link.
+
+```html
+<block-link main-link=".child">
+  <block-link class="child" main-link="#link">
+    <img src="/some_image.png" />
+    <a href="#main_link" id="link">This will end up being the main link</a>
+  </block-link>
+  <p>Some other content. It might have <a href="#other">other links</a></p>
+</block-link>
+```
+
 ### Styling
 
 This component's only style is `display: block;` but you can customize both
@@ -175,6 +189,14 @@ block-link a{
     <a class=".main-link" href="#footer">Footer Data</a>
   </footer>
 </block-link>
+
+## Browser Support
+
+This component works as-is on all evergreen browsers (Chrome, Safari, Edge, Firefox). 💪
+
+This component doesn't support any IE variation, however, due to it's nature, it's possible that
+it will degradate gracefully on IE so that the markup and styles display properly just without the
+block link behavior. (⚠️ Warning ⚠️ this hasn't been tested yet)
 
 ## Great Articles on This Topic
 
