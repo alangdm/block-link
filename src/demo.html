@@ -10,7 +10,7 @@
 	<link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" />
 	<style>
 		body {
-			font-family: "PT Serif", serif;
+			font-family: "Roboto", sans-serif;
 		}
 
 		* {
@@ -49,14 +49,14 @@
 			text-decoration: none;
 		}
 
+		.date a {
+			color: grey;
+		}
+
 		a:hover,
 		a:focus {
 			color: #ff8a00;
 			outline: none;
-		}
-
-		time {
-			color: grey;
 		}
 
 		.author-name {
@@ -94,7 +94,7 @@
 <body>
 	<block-link class="card" main-link="h2 a">
 		<section>
-			<p><a href="#date"><time datetime="2020-01-01">Jan 1, 2020</time></a></p>
+			<p class="date"><a href="#date"><time datetime="2020-01-01">Jan 1, 2020</time></a></p>
 			<h2><a href="#title">&ltblock-link&gt Demo</a></h2>
 			<p>The current URL hash will be displayed here: <span id="hash"><span></p>			
 		</section>		
