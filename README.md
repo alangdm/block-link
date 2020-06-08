@@ -1,4 +1,6 @@
 [![edit-in-WebComponents.dev](https://webcomponents.dev/assets/ext/edit_in_wcd.svg)](https://webcomponents.dev/edit/dyflJofod72crJWUDyyo)
+[![npm](https://img.shields.io/npm/v/@alangdm/block-link)](https://www.npmjs.com/package/@alangdm/block-link)
+[![minzipped size](https://img.shields.io/bundlephobia/minzip/@alangdm/block-link)](https://bundlephobia.com/result?p=@alangdm/block-link)
 
 # `<block-link>`
 
@@ -201,7 +203,7 @@ block-link a{
 This component works as-is on all evergreen browsers (Chrome, Safari, Edge, Firefox). 💪
 
 This component doesn't support any IE variation, however, due to it's nature, it's possible that
-it will degradate gracefully on IE so that the markup and styles display properly just without the
+it will degrade gracefully on IE so that the markup and styles display properly just without the
 block link behavior. (⚠️ Warning ⚠️ this hasn't been tested yet)
 
 ## Great Articles on This Topic
