@@ -1,0 +1,37 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "block-link",
+      "description": "A simple and super lightweight web component to create block links.",
+      "attributes": [
+        {
+          "name": "main-link",
+          "description": "Selector that identifies the main link",
+          "type": "string",
+          "default": "\"a\""
+        },
+        {
+          "name": "mainlink",
+          "description": "Selector that identifies the main link",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "mainLink",
+          "attribute": "main-link",
+          "description": "Selector that identifies the main link",
+          "type": "string",
+          "default": "\"a\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "The default slot for this component's content"
+        }
+      ]
+    }
+  ]
+}
