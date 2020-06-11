@@ -121,7 +121,7 @@ The value has to be a selector relative to the parent `<block-link>` that can be
     Some text
   </p>
   <footer>
-    <a class=".main-link" href="#footer">This will be the main link</a>
+    <a class="main-link" href="#footer">This will be the main link</a>
   </footer>
 </block-link>
 ```
@@ -194,7 +194,7 @@ block-link a{
 		<a href="https://webcomponents.dev/preview/dyflJofod72crJWUDyyo">the demo/docs site.</a>
   </p>
   <footer>
-    <a class=".main-link" href="#footer">Footer Data</a>
+    <a class="main-link" href="#footer">Footer Data</a>
   </footer>
 </block-link>
 
