@@ -4,9 +4,25 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="&ltblock-link&gt Demo">
+	<meta property="og:url" content="https://alangdm.github.io/block-link/www">
+	<meta property="og:title" content="&ltblock-link&gt Demo">
 	<title>&ltblock-link&gt Demo</title>
+	<meta property="og:description" content="A simple and super lightweight web component to create block links.">
+	<meta name="description" content="A simple and super lightweight web component to create block links.">
 
-	<link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" />
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@AlanGDavalos">
+	<meta name="twitter:creator" content="@AlanGDavalos">
+	<meta name="twitter:title" content="&ltblock-link&gt Demo">
+	<meta name="twitter:description" content="A simple and super lightweight web component to create block links.">
+
+	<link rel="icon"
+		href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔗</text></svg>">
+
+	<link rel="preload" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" as="style"
+		onload="this.onload=null;this.rel='stylesheet'">
 	<link href="./style.css" rel="stylesheet" />
 	<script type="module" src="./script.js"></script>
 </head>
@@ -26,7 +42,7 @@
 			<p>The current URL hash will be displayed here: <span id="hash"><span></p>			
 		</section>		
 		<block-link class="author-name">
-			<img src="https://via.placeholder.com/36?text=Avatar"> 
+			<img width="36" height="36" alt="Avatar" src="https://via.placeholder.com/108?text=Avatar"> 
 			<a href="#author">Author Name</a>
 		</block-link>
 		<footer class="tags">
