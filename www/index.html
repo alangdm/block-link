@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>&ltblock-link&gt Demo</title>
+
+	<link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" />
+	<link href="./style.css" rel="stylesheet" />
+	<script type="module" src="./script.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>&ltblock-link&gt Demo</h1>
+		<p>For more details on how to use this component check out the <a
+				href="https://github.com/alangdm/block-link#block-link">Github repository</a>.
+		</p>
+	</header>
+
+	<block-link class="card" main-link="h2 a">
+		<section>
+			<p class="date"><a href="#date"><time datetime="2020-01-01">Jan 1, 2020</time></a></p>
+			<h2><a href="#title">&ltblock-link&gt Demo</a></h2>
+			<p>The current URL hash will be displayed here: <span id="hash"><span></p>			
+		</section>		
+		<block-link class="author-name">
+			<img src="https://via.placeholder.com/36?text=Avatar"> 
+			<a href="#author">Author Name</a>
+		</block-link>
+		<footer class="tags">
+			<a class="tag" href="#tag_one">Tag One</a>
+			<a class="tag" href="#tag_two">Tag Two</a>
+		</footer>
+	</block-link>
+
+	<section class="code">
+	<h2>Code for this Demo</h2>
+	<pre>
+		<code class="language-markup"></code>
+	</pre>
+	</section>
+
+	<script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+	<script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+	</body>
+
+</html>
