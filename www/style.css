@@ -1,0 +1,100 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+/* header */
+header {
+  background: #01579b;
+  color: #ffffff;
+  padding: 0.75rem;
+}
+header h1 {
+  margin: 0.5em 0;
+}
+header p {
+  margin: 0;
+}
+
+/* Code */
+
+.code {
+  padding: 0 1rem;
+}
+
+/* Demo */
+.card {
+  width: 300px;
+  height: 350px;
+  background: #17141d;
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  box-shadow: -1rem 0 3rem #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.card:hover h2 a {
+  color: #ff8a00;
+}
+
+.card:focus-within a:focus {
+  text-decoration: none;
+}
+
+.card,
+.card a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.date a {
+  color: grey;
+}
+
+.card a:hover,
+.card a:focus {
+  color: #ff8a00;
+  outline: none;
+}
+
+.author-name {
+  display: flex;
+  align-items: center;
+}
+
+.author-name img {
+  height: 36px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.tags {
+  display: flex;
+  margin: 10px 0;
+}
+
+.tags .tag {
+  padding: 5px 10px;
+  border: solid 1px grey;
+  border-radius: 3px;
+}
+
+.tags .tag:hover {
+  background: gray;
+}
+
+a.tag + a.tag {
+  margin-left: 10px;
+}
