@@ -204,9 +204,9 @@ block-link a{
 
 This component works as-is on all evergreen browsers (Chrome, Safari, Edge, Firefox). 💪
 
-This component doesn't support any IE variation, however, due to it's nature, it's possible that
+This component doesn't support any IE variation, however, due to it's nature,
 it will degrade gracefully on IE so that the markup and styles display properly just without the
-block link behavior. (⚠️ Warning ⚠️ this hasn't been tested yet)
+block link behavior, for example, clicking on links will work but clicking on the rest of the component won't.
 
 ## Great Articles on This Topic
 
