@@ -4,7 +4,7 @@
 
 # `<block-link>`
 
-###### [Demo](https://alangdm.github.io/block-link/www/)
+###### [Demo](https://alangdm.github.io/block-link/)
 
 A simple and super lightweight web component to create block links.
 
