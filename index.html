@@ -24,7 +24,6 @@
 	<link rel="preload" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" as="style"
 		onload="this.onload=null;this.rel='stylesheet'">
 	<link href="./style.css" rel="stylesheet" />
-	<script type="module" src="./hash.js"></script>
 	<script type="module" src="./dist/index.js"></script>
 </head>
 
@@ -61,6 +60,16 @@
 
 	<script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
 	<script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+	<script>
+		const hash = document.querySelector("#hash");
+		window.addEventListener("hashchange", () => {
+			hash.textContent = location.hash;
+		});
+
+		const code = document.querySelector("code");
+		const mainDemo = document.querySelector("block-link.card");
+		code.textContent = mainDemo.outerHTML;
+	</script>	
 	</body>
 
 </html>
