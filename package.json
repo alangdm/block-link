@@ -9,6 +9,9 @@
   "exports": {
     ".": {
       "default": "./index.js"
+    },
+    "./BlockLink.js": {
+      "default": "./BlockLink.js"
     }
   },
   "types": "dist/BlockLink.d.ts",
