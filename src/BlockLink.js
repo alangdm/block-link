@@ -1,5 +1,5 @@
-const ATTRIBUTE_MAP = { "main-link": "mainLink", mainlink: "mainLink" };
-const DEFAULT_SELECTOR = "a";
+const ATTRIBUTE_MAP = { 'main-link': 'mainLink', mainlink: 'mainLink' };
+const DEFAULT_SELECTOR = 'a';
 const LINK_REGEX = /^(block-link|a)$/i;
 
 /**
@@ -20,7 +20,7 @@ export class BlockLink extends HTMLElement {
     const css = `:host { display: block; }`;
     const html = `<slot></slot>`;
 
-    this.attachShadow({ mode: "open" });
+    this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = `
     <style>${css}</style>
     ${html}
@@ -28,7 +28,7 @@ export class BlockLink extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ["main-link", "mainlink"];
+    return ['main-link', 'mainlink'];
   }
 
   attributeChangedCallback(attr, oldVal, newVal) {
@@ -38,11 +38,11 @@ export class BlockLink extends HTMLElement {
   }
 
   connectedCallback() {
-    this.addEventListener("click", this._clicked);
+    this.addEventListener('click', this._clicked);
   }
 
   disconnectedCallback() {
-    this.removeEventListener("click", this._clicked);
+    this.removeEventListener('click', this._clicked);
   }
 
   get _mainLinkNode() {
