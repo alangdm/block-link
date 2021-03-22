@@ -7,7 +7,9 @@
   "type": "module",
   "module": "index.js",
   "exports": {
-    "./": "./index.js"
+    ".": {
+      "default": "./index.js"
+    }
   },
   "types": "dist/BlockLink.d.ts",
   "homepage": "https://alangdm.github.io/block-link/",
