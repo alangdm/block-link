@@ -1,4 +1,32 @@
 {
- "name": "@wcd/alangdm.block-link",
- "version": "0.0.0"
+  "name": "@wcd/alangdm.block-link",
+  "version": "0.0.0",
+  "description": "A simple and super lightweight web component to create block links.",
+  "author": "alangdm",
+  "license": "MIT",
+  "type": "module",
+  "module": "index.js",
+  "exports": {
+    "./": "./index.js"
+  },
+  "types": "dist/BlockLink.d.ts",
+  "homepage": "https://alangdm.github.io/block-link/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alangdm/block-link.git"
+  },
+  "scripts": {
+    "serve": "wcd-cli serve dyflJofod72crJWUDyyo --open"
+  },
+  "devDependencies": {
+    "wcd-cli": "latest"
+  },
+  "dependencies": {},
+  "keywords": [
+    "web components",
+    "block link",
+    "link",
+    "custom element",
+    "a11y"
+  ]
 }
